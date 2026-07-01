@@ -1,0 +1,110 @@
+<--　tomcatのhttps通信（仮）
+
+・Eclipseのserver.xml
+　　→　最初に設定したworkspace（パスは個人差ある可能性）
+　　　　"C:\pleiades\2025-09\workspace\Servers\localhost の Tomcat v10.1 サーバー-config\server.xml"
+
+
+・Tomcatのserver.xml　
+  　→　"C:\Apache Software Foundation\Tomcat 10.1\conf\server.xml"
+
+
+※各ファイルの記述は先にテキストなどに保存してバックアップ
+　サーバー起動がしなくなるので、手順で実行できなければ差し戻してください
+不明点はAIに過程などを入力し手順を調べてください
+
+
+・サンプルプロジェクト ─ AI問題生成
+
+
+
+────────────────
+
+〇ステップ1:
+" keytool "でキーストア（証明書）を作成する
+まずは、SSL通信に必要な「鍵」を作成します。コマンドプロンプト（またはPowerShell）を管理者権限で開き、以下のコマンドを実行してください。
+keytoolをコマンドで認識しない場合は、コマンドラインでインストールしてください（例：　npm install keytool）
+
+
+keytool -genkey -alias tomcat -keyalg RSA -keysize 2048 -keystore "C:\Apache Software Foundation\Tomcat 10.1\conf\keystore.jks" -validity 3650
+
+※Tomcatファイルの位置、ヴァージョンの違いでC:\以降の記述変わる
+
+
+※コマンドを実行すると、いくつか質問されます。
+
+キーストアのパスワード: 任意のパスワードを入力します（例: changeit や 944603 など）。
+※このパスワードは後で使いますので忘れないでください。入力中は画面に文字が表示されませんが、正常に入力されています。
+
+姓名、組織単位、組織名など: 基本的にすべて Enter キーでスキップして構いません（本番環境の正式な証明書ではない、自己署名証明書のため）。
+
+最後に [no]: と聞かれたら yes と入力して Enter を押します。
+
+これで conf フォルダの中に keystore.jks というファイルが作成されます。
+
+
+
+〇ステップ2:
+ server.xml を修正する
+
+Tomcat側のserver.xmlを、添付してある.xmlファイルの記述と交換
+
+
+〇ステップ３：
+Eclipseのserver.xmlを編集
+
+同じくお送りした.xmlファイルと、workspace下にあるserver.xmlファイルの記述と交換
+
+※workspaceはEclipseで設定したファイル
+例：）"C:\pleiades\2025-09\workspace\Servers\localhost の Tomcat v10.1 サーバー-config\server.xml"
+
+
+
+〇ステップ４：
+Eclipseを起動し、サーバータブ→右クリ→開く→ポート→HTTP/1.1→ポート番号を8443→保存
+
+
+※繁栄がされない場合
+ブラウザで直接https://localhost:8443を叩いても反応が無い場合
+
+・サーバタブ→tomcat鯖をダブルクリック→概要タブの中からポートを選択→" ssl | 8443 "のポートがるか確認
+
+・プロジェクトを右クリックで各種設定でtomcatサーバーが反映されているか確認
+
+・サーバータブかあらtomcatの各種キャッシュクリーン
+
+・それでも治らないなら、サーバータブからtomcatを削除して、再設定（プロジェクト設定は継続されているはず）
+
+
+<% それでもhttpsが設定されない場合は、コンソールログやこのテキスト、状況をAIに投げて解決策を仰いでください %>
+
+
+
+-->
+
+
+
+↓プログラムは、https://localhost:8443を優先したい場合に、WEB-INF直下にweb.xmlを作成し、その中に記述
+
+-------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected Context</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+</web-app>
+
+
