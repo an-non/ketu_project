@@ -5,6 +5,9 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,9 +29,41 @@ import com.google.gson.JsonParser;
 public class QuizServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    // 環境変数が空、または不正な場合のフォールバックとしてキーを設定
-    private static final String GEMINI_API_KEY = System.getenv("GEMINI_API_KEY") != null && !System.getenv("GEMINI_API_KEY").isEmpty() 
-            ? System.getenv("GEMINI_API_KEY") : "AQ.Ab8RN6K0tcWIkhfMNR6xWV6iCmg0y0JkZrJ7gj8Q-XEuEH1nTw";
+    // 環境変数または保護された秘密ファイルから API キーを取得する
+    private static final String GEMINI_API_KEY = resolveGeminiApiKey();
+
+    private static String resolveGeminiApiKey() {
+        String fromEnv = System.getenv("GEMINI_API_KEY");
+        if (fromEnv != null && !fromEnv.isBlank()) {
+            return fromEnv.trim();
+        }
+
+        String[] candidateFiles = {
+                "/etc/ketu/secrets/gemini.env",
+                "/opt/ketu/secrets/gemini.env"
+        };
+
+        for (String candidateFile : candidateFiles) {
+            try {
+                Path path = Paths.get(candidateFile);
+                if (Files.exists(path)) {
+                    for (String line : Files.readAllLines(path)) {
+                        String trimmed = line.trim();
+                        if (trimmed.startsWith("GEMINI_API_KEY=")) {
+                            String value = trimmed.substring("GEMINI_API_KEY=".length()).trim();
+                            if (!value.isEmpty()) {
+                                return value;
+                            }
+                        }
+                    }
+                }
+            } catch (IOException ignored) {
+                // 署名付き秘密ファイルが無い場合は続行する
+            }
+        }
+
+        return "";
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
@@ -129,6 +164,10 @@ public class QuizServlet extends HttpServlet {
      * Gsonを利用してGemini APIからクイズデータを取得・パースするメソッド
      */
     private Map<String, Object> callGeminiAPIWithGson(String topic) throws Exception {
+        if (GEMINI_API_KEY == null || GEMINI_API_KEY.isBlank()) {
+            throw new IllegalStateException("GEMINI_API_KEY is not configured");
+        }
+
         // 【重要】2026年現在の安定エンドポイントと正規モデル「gemini-2.5-flash」を指定
         String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
         

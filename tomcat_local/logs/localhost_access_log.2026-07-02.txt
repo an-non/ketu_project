@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:16:44 +0000] "HEAD /samplePro_A_tame/jsp/quiz.jsp HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:16:47 +0000] "GET / HTTP/1.1" 404 812
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:16:48 +0000] "GET /favicon.ico HTTP/1.1" 404 812
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:21:17 +0000] "POST /samplePro_A_tame/QuizServlet HTTP/1.1" 500 3846
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:22:35 +0000] "POST /samplePro_A_tame/QuizServlet HTTP/1.1" 200 8562
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:23:00 +0000] "POST /samplePro_A_tame/QuizServlet HTTP/1.1" 200 8365
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:43:46 +0000] "HEAD /samplePro_A_tame/jsp/quiz.jsp HTTP/2.0" 200 -
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:43:47 +0000] "GET / HTTP/2.0" 404 812
+0:0:0:0:0:0:0:1 - - [02/Jul/2026:02:43:47 +0000] "GET /favicon.ico HTTP/2.0" 404 812

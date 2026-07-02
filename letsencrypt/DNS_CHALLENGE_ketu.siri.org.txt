@@ -1,0 +1,43 @@
+# ACME DNS-01 challenge for ketu.siri.org
+# Add this TXT record to your DNS provider:
+# Name: _acme-challenge.ketu.siri.org
+# Type: TXT
+# Value: ARMnOPsL97RTLgqUC2Z6XMgk8gRNrtFlKUu_QmwjQo8
+
+TXT record value:
+ARMnOPsL97RTLgqUC2Z6XMgk8gRNrtFlKUu_QmwjQo8
+
+Instructions:
+1. Log in to the DNS provider for ketu.siri.org.
+2. Create a TXT record with the name _acme-challenge.ketu.siri.org.
+3. Set the TXT value to the string above.
+4. Save the record and wait for DNS propagation.
+5. Verify with:
+   dig TXT _acme-challenge.ketu.siri.org +short
+
+Example entry in DNS panel:
+- Host/Name: _acme-challenge.ketu.siri.org
+- Type: TXT
+- Value: ARMnOPsL97RTLgqUC2Z6XMgk8gRNrtFlKUu_QmwjQo8
+- TTL: 300
+
+If your DNS panel manages the zone siri.org, the host is often entered as:
+- _acme-challenge.ketu
+
+If your DNS panel expects the full FQDN, enter:
+- _acme-challenge.ketu.siri.org.
+
+After adding the record, confirm by running:
+- host -t txt _acme-challenge.ketu.siri.org
+- dig TXT _acme-challenge.ketu.siri.org +short
+
+Required DNS implementation summary:
+- Zone: siri.org
+- Record name: _acme-challenge.ketu.siri.org
+- Record type: TXT
+- Record value: ARMnOPsL97RTLgqUC2Z6XMgk8gRNrtFlKUu_QmwjQo8
+- TTL: 300
+
+If the DNS panel only asks for the host under the zone, use:
+- _acme-challenge.ketu
+               

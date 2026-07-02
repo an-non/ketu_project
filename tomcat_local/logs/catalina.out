@@ -1,0 +1,439 @@
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version name:   Apache Tomcat/10.1.16 (Ubuntu)
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Dec 3 2023 12:31:22 UTC
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version number: 10.1.16.0
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.8.0-1052-azure
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /opt/java/11.0.14
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           11.0.14.1+1-LTS
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Microsoft
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /workspaces/ketu_project/tomcat_local
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /usr/share/tomcat10
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dnop
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/workspaces/ketu_project/tomcat_local
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/usr/share/tomcat10
+Jul 02, 2026 2:16:34 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/workspaces/ketu_project/tomcat_local/temp
+Jul 02, 2026 2:16:34 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+Jul 02, 2026 2:16:35 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8080"]
+Jul 02, 2026 2:16:35 AM org.apache.catalina.startup.Catalina load
+INFO: Server initialization in [1670] milliseconds
+Jul 02, 2026 2:16:35 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+Jul 02, 2026 2:16:35 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/10.1.16 (Ubuntu)]
+Jul 02, 2026 2:16:35 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war]
+Jul 02, 2026 2:16:38 AM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jul 02, 2026 2:16:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war] has finished in [2,522] ms
+Jul 02, 2026 2:16:38 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8080"]
+Jul 02, 2026 2:16:38 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in [2680] milliseconds
+Jul 02, 2026 2:21:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: Marking servlet [com.quiz.servlet.QuizServlet] as unavailable
+Jul 02, 2026 2:21:17 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Allocate exception for servlet [com.quiz.servlet.QuizServlet]
+java.lang.UnsupportedClassVersionError: com/quiz/servlet/QuizServlet has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [com.quiz.servlet.QuizServlet])
+	at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2356)
+	at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:800)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInstanceManager.java:491)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivileged(DefaultInstanceManager.java:473)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:143)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:865)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:649)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:115)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version name:   Apache Tomcat/10.1.16 (Ubuntu)
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Dec 3 2023 12:31:22 UTC
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version number: 10.1.16.0
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.8.0-1052-azure
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /opt/java/11.0.14
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           11.0.14.1+1-LTS
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Microsoft
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /workspaces/ketu_project/tomcat_local
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /usr/share/tomcat10
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dnop
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/workspaces/ketu_project/tomcat_local
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/usr/share/tomcat10
+Jul 02, 2026 2:22:14 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/workspaces/ketu_project/tomcat_local/temp
+Jul 02, 2026 2:22:14 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+Jul 02, 2026 2:22:15 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8080"]
+Jul 02, 2026 2:22:15 AM org.apache.catalina.util.LifecycleBase handleSubClassException
+SEVERE: Failed to initialize component [Connector["http-nio-8080"]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1010)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1293)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+	... 13 more
+
+Jul 02, 2026 2:22:15 AM org.apache.catalina.startup.Catalina load
+INFO: Server initialization in [1211] milliseconds
+Jul 02, 2026 2:22:15 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+Jul 02, 2026 2:22:15 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/10.1.16 (Ubuntu)]
+Jul 02, 2026 2:22:15 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war]
+Jul 02, 2026 2:22:15 AM org.apache.catalina.startup.ExpandWar expand
+INFO: An expanded directory [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame] was found with a last modified time that did not match the associated WAR. It will be deleted.
+Jul 02, 2026 2:22:18 AM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/samplePro_A_tame]
+Jul 02, 2026 2:22:18 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war]
+Jul 02, 2026 2:22:18 AM org.apache.tomcat.util.scan.StandardJarScanner scan
+WARNING: Failed to scan JAR [file:/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame/WEB-INF/lib/jakarta.servlet.jsp.jstl-3.0.1.jar] from /WEB-INF/lib
+java.nio.file.NoSuchFileException: /workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame/WEB-INF/lib/jakarta.servlet.jsp.jstl-3.0.1.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1259)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:831)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:857)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:846)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:125)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:155)
+	at java.base/java.net.URL.openStream(URL.java:1165)
+	at org.apache.tomcat.util.descriptor.tld.TldResourcePath.openStream(TldResourcePath.java:127)
+	at org.apache.tomcat.util.descriptor.tld.TldParser.parse(TldParser.java:62)
+	at org.apache.jasper.servlet.TldScanner.parseTld(TldScanner.java:275)
+	at org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan(TldScanner.java:315)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:401)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:197)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:975)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1952)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:776)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:426)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1659)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:482)
+
+Jul 02, 2026 2:22:18 AM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jul 02, 2026 2:22:18 AM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war]
+java.lang.IllegalStateException: Error starting child
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:975)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1952)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:776)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:426)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1659)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:482)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/samplePro_A_tame]]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+	... 37 more
+Caused by: java.lang.NullPointerException
+	at org.apache.jasper.compiler.TldCache.getLastModified(TldCache.java:132)
+	at org.apache.jasper.compiler.TldCache.<init>(TldCache.java:70)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:95)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	... 38 more
+
+Jul 02, 2026 2:22:18 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war] has finished in [2,804] ms
+Jul 02, 2026 2:22:18 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in [2946] milliseconds
+Jul 02, 2026 2:22:19 AM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jul 02, 2026 2:22:19 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war] has finished in [1,266] ms
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version name:   Apache Tomcat/10.1.16 (Ubuntu)
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Dec 3 2023 12:31:22 UTC
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version number: 10.1.16.0
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.8.0-1052-azure
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /opt/java/11.0.14
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           11.0.14.1+1-LTS
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Microsoft
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /workspaces/ketu_project/tomcat_local
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /usr/share/tomcat10
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dnop
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/workspaces/ketu_project/tomcat_local
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/usr/share/tomcat10
+Jul 02, 2026 2:43:38 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/workspaces/ketu_project/tomcat_local/temp
+Jul 02, 2026 2:43:38 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+Jul 02, 2026 2:43:38 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8080"]
+Jul 02, 2026 2:43:38 AM org.apache.catalina.util.LifecycleBase handleSubClassException
+SEVERE: Failed to initialize component [Connector["http-nio-8080"]]
+org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1010)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1293)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+	... 13 more
+
+Jul 02, 2026 2:43:38 AM org.apache.coyote.http11.AbstractHttp11Protocol configureUpgradeProtocol
+INFO: The ["https-jsse-nio-8443"] connector has been configured to support negotiation to [h2] via ALPN
+Jul 02, 2026 2:43:38 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["https-jsse-nio-8443"]
+Jul 02, 2026 2:43:38 AM org.apache.tomcat.util.net.AbstractEndpoint logCertificate
+INFO: Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [RSA] configured from keystore [/workspaces/ketu_project/tomcat_local/conf/keystore.jks] using alias [tomcat] with trust store [null]
+Jul 02, 2026 2:43:39 AM org.apache.catalina.startup.Catalina load
+INFO: Server initialization in [1351] milliseconds
+Jul 02, 2026 2:43:39 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+Jul 02, 2026 2:43:39 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/10.1.16 (Ubuntu)]
+Jul 02, 2026 2:43:39 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war]
+Jul 02, 2026 2:43:41 AM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jul 02, 2026 2:43:41 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive [/workspaces/ketu_project/tomcat_local/webapps/samplePro_A_tame.war] has finished in [2,321] ms
+Jul 02, 2026 2:43:41 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["https-jsse-nio-8443"]
+Jul 02, 2026 2:43:41 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in [2528] milliseconds
